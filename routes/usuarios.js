@@ -1,11 +1,11 @@
 'use strict'
 
 const express = require('express');
-const CasosController = require('../controllers/usuarios');
+const UsuariosController = require('../controllers/usuarios');
 
 const router = express.Router();
 
-router.post('/search', CasosController.search);
+router.get('/search/:correo', UsuariosController.search);
 
 
 module.exports = router;

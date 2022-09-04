@@ -8,6 +8,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const casosRoutes = require('./routes/casos');
+const usuariosRoutes = require('./routes/usuarios');
 const app = express();
 
 //* Conexión base de datos
@@ -27,6 +28,7 @@ app.use(cors());
 
 //* Routes
 app.use('/casos', casosRoutes);
+app.use('/usuarios', usuariosRoutes);
 
 //* Server Running
 app.set('port', process.env.SERVERPORT);
