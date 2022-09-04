@@ -8,6 +8,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const casosRoutes = require('./routes/casos');
+const tipoCasosRoutes = require('./routes/tipo-casos');
 const usuariosRoutes = require('./routes/usuarios');
 const app = express();
 
@@ -29,6 +30,7 @@ app.use(cors());
 //* Routes
 app.use('/casos', casosRoutes);
 app.use('/usuarios', usuariosRoutes);
+app.use('/tipo-casos', tipoCasosRoutes);
 
 //* Server Running
 app.set('port', process.env.SERVERPORT);

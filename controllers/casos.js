@@ -65,7 +65,7 @@ const controller = {
                         message: "Error en el envio de correo",
                         err
                     })
-                    enviarCorreo(rows);
+                    enviarCorreo(rows[0]);
                     return res.status(200).send({
                         status: true,
                         rows
