@@ -1,0 +1,15 @@
+.usuario-depa{
+    display: inline-block;
+} 
+
+.dis{
+    width: 250px;
+}
+
+.radio-box{
+    display: flex;
+}
+
+.errorAdd{
+    color: red;
+}
