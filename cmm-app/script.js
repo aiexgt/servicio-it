@@ -10,7 +10,7 @@ const btnEnviar = document.getElementById("idBtnEnviar");
 const btnLimpiar = document.getElementById("idBtnLimpiar");
 const casos = document.getElementById("idCasos");
 
-
+//* funcion para leer tipo de caso
 const leerTipoCaso = ()=>{
     fetch(`http://localhost:3000/tipo-casos/read`)
         .then(response => response.json())
